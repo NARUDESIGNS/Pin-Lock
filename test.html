@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+    <title>PIN APP</title>
+</head>
+<body>
+
+    <!-- CREATE PIN LOCK-->
+    <div class="bg-container" id="bg-container">
+        <div class="create-pin">
+            <div class="message-alert" id="message-alert">
+                <p id="message"> Please fill up empty fields! </p>
+            </div>
+        
+            <form class="container">
+                <input type="password" maxlength="4" placeholder="PIN" id="pin" required>
+                <i class="fa fa-eye-slash" id="see-pin"></i>
+                <input type="password" maxlength="4" placeholder="CONFIRM PIN" id="confirm-pin" required>
+                <i class="fa fa-eye-slash" id="see-confirm"></i>
+                <a id="link" type="submit"> CREATE </a> 
+            </form>     
+        </div>
+    </div>
+
+    <!-- PIN LOCK-->
+    <div class="container1" id="container1">
+       
+        <div class="output" id="output">
+            <section class="input_circle" id="circle1"></section>
+            <section class="input_circle" id="circle2"></section>
+            <section class="input_circle" id="circle3"></section>
+            <section class="input_circle" id="circle4"></section>
+        </div>
+
+        <div class="keyboard">
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="blank"></button>
+            <button class="number">0</button>
+            <button class="operator" id="del"> <i class="fa fa-backspace"></i> </button>
+        </div>
+
+        <div class="success" id="success"> 
+            Sign-In Successful <br>
+            <i class="fa fa-check-circle"></i> 
+        </div>
+
+    </div>
+    
+    <div class="screen">
+            
+    </div>
+
+<script src="test.js"></script>
+</body>
+</html>

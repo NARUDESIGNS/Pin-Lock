@@ -1,0 +1,220 @@
+
+/* CREATE PIN STYLES */
+
+.bg-container {
+    background-color: black;   
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.message-alert {
+    background-color: rgb(224, 101, 101);
+    height: 50px;
+    width: 250px;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 10px;
+    opacity: 0;
+    /* animation-fill-mode: forwards; 
+    animation-name: message; 
+    animation-duration: 3s; */
+}
+
+ /* @keyframes message {
+   0% {opacity: 0}
+   90% {opacity: 1} 
+   100% {opacity: 0} 
+}  */
+
+p {    
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+input {
+    height: 30px;
+    width: 200px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    background-color: rgb(40, 39, 39);
+    outline: none;
+    color: white;
+    font-size: 15px;
+}
+
+.fa-eye, .fa-eye-slash{
+    color: rgb(198, 197, 197);
+    position: relative;
+    top: -30px;
+    right: -80px;
+    font-size: 15px;
+    cursor: pointer;
+} 
+
+::placeholder {
+    color: white;
+    font-size: 10px;
+}
+
+a {
+    height: 30px;
+    width: 210px;    
+    margin: 5px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: green;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+a:hover {
+    font-size: 16px;
+}
+
+a:active {
+    background-color: rgb(4, 97, 4);
+}
+
+
+
+
+
+
+
+/* PIN LOCK STYLES */
+
+.container1 {
+    visibility: hidden;
+    background-color: black;
+    width: 250px;
+    height: 500px;
+    margin: 30px auto;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.output {
+    width: 193px;
+    height: 25px;
+    position: relative;
+    top: 90px;
+    left: 25px;
+    display: flex;
+}
+
+.shake-effect {
+    animation-name: shake; 
+    animation-duration: 0.25s;
+} 
+
+@keyframes shake {
+    25% { margin-left: 10px; }
+    50% { margin-left: 0px; }
+    75% { margin-left: 10px; }
+    100% { margin-left: 0px; }
+}
+
+/* #circle1 {
+    background-color: white;
+}  */
+
+.input_circle {
+    border: 2px solid white;
+    height: 5px;
+    width: 5px;
+    margin-left: 33px;
+    border-radius: 50%;
+}
+
+.keyboard {
+    margin-left: 17px;
+    margin-top: 100px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    vertical-align: top;
+    border-radius: 50%;
+    background-color: rgb(40, 39, 39);
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:active {
+    font-size: 20px;
+}
+
+.keyboard :nth-child(10) {
+    visibility: hidden;
+    background-color: black;
+}
+
+.keyboard :last-child {
+    background-color: black;
+    font-size: 15px;
+}
+
+.fa-backspace:active {
+    font-size: 20px;
+}
+
+.success {
+    visibility: hidden;
+    background-color: white;
+    height: auto;
+    width: auto;
+    padding: 50px 30px;
+    text-align: center;
+    position: relative;
+    top: -270px;
+    color: green;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.fa-check-circle {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+/* SCREEN AFTER LOGIN */
+
+.screen {
+    visibility: hidden;
+    position: absolute;
+    background-color: grey;
+    width: block;
+    height: 100px;
+    margin-top: 0px;
+    top: 0px;
+    /* background: url('bike_shot.jpg');
+    background-size:  600px;
+    height: 700px; */
+}
